@@ -16,12 +16,12 @@ def driver():
     yield driver
     driver. quit()
 
-#def test_login(driver):
+def test_login(driver):
 
-    #login_saucedemo(driver)
-    #assert "/inventory.html" in driver.current_url
-    #titulo = driver.find_element(By.CSS_SELECTOR, 'div.header_secondary_container .title').text
-    #assert titulo == 'Products'
+    login_saucedemo(driver)
+    assert "/inventory.html" in driver.current_url
+    titulo = driver.find_element(By.CSS_SELECTOR, 'div.header_secondary_container .title').text
+    assert titulo == 'Products'
 
 
 
